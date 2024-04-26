@@ -19,8 +19,14 @@ echo formatarNumero(1111111);
 
 echo '<hr>';
 $data = date('d/m/Y H:i:s');
-*/
+
 
 echo contarTempo('2024-04-26 16:38:05');
+*/
+
+$var = $_GET['var'];
+
 
 echo '<hr><a href="../" class="btn btn-primary btn-sm">Voltar</a>';
+
+var_dump(validarUrl($var));
