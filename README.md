@@ -22,14 +22,26 @@ CONTAINER ID   IMAGE          COMMAND                  CREATED       STATUS     
 ed0109d778cf   mysql:5.7      "docker-entrypoint.s…"   6 hours ago   Up 40 minutes   0.0.0.0:3306->3306/tcp, 33060/tcp   mysql
 ```
 
+## Para testar no Browser
+```http://docker.localhost/```
+
 ## Para acessar o bash de alguma delas: Ex.: php-fpm
 ```docker exec -it php-fpm bash```
-
 Feito isto, se necessário instalar algo, como por exemplo o Vim, depois do comando anterior:
 ```
 apt-get update
 apt-get install vim
 ```
+
+## Para saber o endereço ip de um container:
+```docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' mysql```
+
+Irá retornar por exempo:
+```
+>> 
+172.19.0.2
+```
+
 
 ## Conteúdo do curso
 Seções | Aulas | Tempo
