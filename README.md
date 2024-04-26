@@ -1,9 +1,31 @@
 # Curso PHP8
 
+```php
+<?php
+
+require_once 'honra.php';
+echo 'Hello JRGGWorld!<br>';
+echo greeting();
+
+```
+
+## Descrição
+Este repositório e referente ao curso:
+
+Curso de PHP 8 Aula 001 Apresentação do Curso de PHP 8  
+Aprenda tudo o que você precisa para ser um programador profissional em PHP
+
+[YouTube](https://www.youtube.com/watch?v=O73xbQvGhHk&list=PL0N5TAOhX5E9eJ9Ix6YUIgEw3lNmaIEE9) | [ûdemy](https://www.udemy.com/course/curso-de-php-8-do-zero/?referralCode=AF873D0C1284D3461014)
+
+
+
 ## Para o curso, crei um ambiente Docker, contendo 3 imagens:
 * nginx
 * php8.1
 * mysql:5.7
+
+> [!NOTE]
+> O Docker é apenas uma opção a qual escolhi, podemos utilizar o XAMPP, Wampserver, entre outros, o importante é ter um servidro Http, o PHP e o MySQL.
 
 ## Arquivos de configuração Docker
 * docker-compose.yml
@@ -26,7 +48,16 @@ ed0109d778cf   mysql:5.7      "docker-entrypoint.s…"   6 hours ago   Up 40 min
 ## Para testar no Browser
 ```http://docker.localhost/```
 
+![Index.php da página](./docs/assets/images/index.jpg)
+
+> [!NOTE]
+> Cada projeto de PHP terá sua pasta dentro do www, a maneira de organizar e listar isto é ilustrado na imagem a seguir
+
+![Index.php da página](./docs/assets/images/organizacao.jpg)
+
 ## Necessário a instalação da extensão PDO para MySQL no PHP 
+> [!IMPORTANT]
+> Sem essa etapa o php não irá conseguir acessar o DB
 ```docker exec -it php-fpm docker-php-ext-install pdo pdo_mysql```
 ```docker-compose restart```
 
@@ -53,9 +84,9 @@ Irá retornar por exempo:
 
 
 ## Conteúdo do curso
-Seções | Aulas | Tempo
+Seções | Aulas | Tempo 
 -|-:|-:
-1: Introdução	|	2	|	25m
+1: Introdução	|	2	|	25m 
 2: Fundamentos	|	36	|	5h 27m
 3: Classes e Objetos	|	8	|	1h 13m
 4: Composer	|	4	|	35m
