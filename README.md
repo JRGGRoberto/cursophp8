@@ -1,6 +1,6 @@
 # Curso PHP8
 
-## Para o curso crei um ambiente Docker, contendo 3 imagens:
+## Para o curso, crei um ambiente Docker, contendo 3 imagens:
 * nginx
 * php8.1
 * mysql:5.7
@@ -30,3 +30,21 @@ Feito isto, se necessário instalar algo, como por exemplo o Vim, depois do coma
 apt-get update
 apt-get install vim
 ```
+
+## Conteúdo do curso
+Seções | Aulas | Tempo
+-|-:|-:
+1: Introdução	|	2	|	25m
+2: Fundamentos	|	36	|	5h 27m
+3: Classes e Objetos	|	8	|	1h 13m
+4: Composer	|	4	|	35m
+5: Rotas	|	3	|	35m
+6: Twig Template	|	1	|	1h 21m
+7: PDO	|	16	|	2h 31m
+8: CMS - Sistema de Gestão de Conteúdos	|	4	|	8h 16m
+9: Classes Auxiliares e Utilitários	|	2	|	4h 50m
+10: DataTable	|	8	|	1h 35m
+11: Deploy - Domínio e Hospedagem	|	1	|	1h 36m
+12: E-mails	|	7	|	1h 12m
+13: Formulários com jQuery e Ajax	|	6	|	1h 23m
+14: Painel do Usuário - EXTRA	|	12	|	1h 47m
