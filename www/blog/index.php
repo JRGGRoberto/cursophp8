@@ -16,3 +16,8 @@ echo '<hr>';
 echo formatarValor(21231231);
 echo '<hr>';
 echo formatarNumero(1111111);
+
+echo '<hr>';
+$data = date('d/m/Y H:i:s');
+echo $data;
+echo '<hr>';
