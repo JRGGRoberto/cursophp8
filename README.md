@@ -12,7 +12,7 @@ echo greeting();
 ## Descrição
 Este repositório e referente ao curso:
 
-Curso de PHP 8 Aula 001 Apresentação do Curso de PHP 8  
+###Curso de PHP 8 
 Aprenda tudo o que você precisa para ser um programador profissional em PHP
 
 [YouTube](https://www.youtube.com/watch?v=O73xbQvGhHk&list=PL0N5TAOhX5E9eJ9Ix6YUIgEw3lNmaIEE9) | [ûdemy](https://www.udemy.com/course/curso-de-php-8-do-zero/?referralCode=AF873D0C1284D3461014)
