@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 
 require_once 'sistema/configuracao.php';
 include_once 'sistema/helpers.php';
- 
+/* 
 echo saudacao();
 echo '<br>';
 $texto = '<h1>Texto para resumir 123456789 123456789 123456789</h1>';
@@ -19,5 +19,8 @@ echo formatarNumero(1111111);
 
 echo '<hr>';
 $data = date('d/m/Y H:i:s');
-echo $data;
-echo '<hr>';
+*/
+
+echo contarTempo('2024-04-26 16:38:05');
+
+echo '<hr><a href="../" class="btn btn-primary btn-sm">Voltar</a>';
