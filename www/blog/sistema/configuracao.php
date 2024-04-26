@@ -5,6 +5,4 @@
  {
     "php.validate.executablePath": "caminho do/php.exe"
  } 
- 
-
  */

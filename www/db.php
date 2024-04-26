@@ -10,4 +10,8 @@ try {
 } catch(PDOException $e) {
     echo 'ERROR: ' . $e->getMessage();
 }
+
+echo '<a href="../" class="btn btn-primary btn-sm">Voltar</a>'
+
 ?>
+

@@ -14,6 +14,7 @@
 
 ## Listar containers em execução  
 ```docker ps```
+
 Deverá retornar isto para a configuração atual
 ```
 CONTAINER ID   IMAGE          COMMAND                  CREATED       STATUS          PORTS                               NAMES
@@ -25,8 +26,16 @@ ed0109d778cf   mysql:5.7      "docker-entrypoint.s…"   6 hours ago   Up 40 min
 ## Para testar no Browser
 ```http://docker.localhost/```
 
+## Necessário a instalação da extensão PDO para MySQL no PHP 
+```docker exec -it php-fpm docker-php-ext-install pdo pdo_mysql```
+```docker-compose restart```
+
+Depois disto já pode testar a conexão pelo browser:
+```http://docker.localhost/db.php```
+
 ## Para acessar o bash de alguma delas: Ex.: php-fpm
 ```docker exec -it php-fpm bash```
+
 Feito isto, se necessário instalar algo, como por exemplo o Vim, depois do comando anterior:
 ```
 apt-get update
