@@ -26,7 +26,6 @@ echo contarTempo('2024-04-26 16:38:05');
 
 $var = $_GET['var'];
 
-
-echo '<hr><a href="../" class="btn btn-primary btn-sm">Voltar</a>';
-
+echo $var. '<br>';
 var_dump(validarUrl($var));
+echo '<hr><a href="../" class="btn btn-primary btn-sm">Voltar</a>';
