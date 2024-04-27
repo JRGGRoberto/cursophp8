@@ -27,6 +27,27 @@
  * https://docs.phpdoc.org/3.0/guide/references/phpdoc/index.html#phpdoc-reference
  */
 
+ function url(string $url): string
+ {
+    $servidor = filter_input(INPUT_SERVER, 'SERVER_NAME');
+    $ambiente = ($servidor == 'docker.localhost' ? URL_DESENVOLVIMENTO : URL_PRODUCAO);
+
+    if(str_starts_with($url, '/')){
+        return $ambiente.$url;
+    }
+    return $ambiente.'/'.$url;
+ }
+
+ function localhost(): bool
+ {
+    $servidor = filter_input(INPUT_SERVER, 'SERVER_NAME');
+
+    if($servidor == 'docker.localhost'){
+        return true;
+    }
+    return false;
+ }
+
  function validarUrlComFiltro(string $url): bool
  {
      return filter_var($url, FILTER_VALIDATE_URL);

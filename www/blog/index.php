@@ -24,8 +24,14 @@ $data = date('d/m/Y H:i:s');
 echo contarTempo('2024-04-26 16:38:05');
 */
 
+/*
 $var = $_GET['var'];
 
 echo $var. '<br>';
 var_dump(validarUrl($var));
+echo '<pre>';
+var_dump($_SERVER);
+echo '</pre>';*/
+//var_dump(localhost());
+echo url('/admin');
 echo '<hr><a href="../" class="btn btn-primary btn-sm">Voltar</a>';
