@@ -26,6 +26,27 @@
  * Docs 
  * https://docs.phpdoc.org/3.0/guide/references/phpdoc/index.html#phpdoc-reference
  */
+/**
+ * Valida CPF 
+ * ref# https://www.macoratti.net/alg_cpf.htm
+ * @param string CPF 9 digitos
+ * @return bool
+ */
+function validaCPF(string $cpf): bool
+{
+    for ($t = 9; $t < 11; $t++) {
+        for ($d = 0, $c = 0; $c < $t; $c++) {
+            $d += $cpf[$c] * (($t + 1) - $c);
+        }
+        $d = ((10 * $d) % 11) % 10;
+        if ($cpf[$c] != $d) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+}
 
  /**
  * Gera url amigável
@@ -171,7 +192,7 @@ function formatarNumero(string $numero = null): string
 function saudacao(): string
 {
     $hora = date('H');
-/*
+
     if ($hora >= 0 && $hora <= 5) {
         $saudacao = 'boa madrugada';
     } elseif ($hora >= 6 && $hora <= 12) {
@@ -181,7 +202,6 @@ function saudacao(): string
     } else {
         $saudacao = 'boa noite';
     }
-*/
 
 /*
     switch ($hora){
@@ -198,12 +218,15 @@ function saudacao(): string
         $saudacao = 'boa noite';
     }
 */
+
+/*
     $saudacao = match(true){
         $hora >= 0  && $hora <= 5  => 'boa madrugada',
         $hora >= 6  && $hora <= 12 => 'bom dia',
         $hora >= 13 && $hora <= 18 => 'boa tarde',
         default =>   'boa noite'
     };
+    */
     return $saudacao;
 }
 
