@@ -27,8 +27,27 @@
  * https://docs.phpdoc.org/3.0/guide/references/phpdoc/index.html#phpdoc-reference
  */
 
- function dataAtual(): string
+ /**
+ * Gera url amigável
+ * @param string $string
+ * @return string slug
+ */
+function slug(string $string): string
 {
+    $mapa['a'] = 'ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜüÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûýýþÿRr"!@#$%&*()_-+={[}]/?¨|;:.,\\\'<>°ºª  ';
+
+    $mapa['b'] = 'aaaaaaaceeeeiiiidnoooooouuuuuybsaaaaaaaceeeeiiiidnoooooouuuyybyRr                                 ';
+    $slug = strtr(utf8_decode($string), utf8_decode($mapa['a']), $mapa['b']);
+    $slug = strip_tags(trim($slug));
+    $slug = str_replace(' ', '-', $slug);
+    $slug = str_replace(['-----', '----', '---', '--', '-'], '-', $slug);
+
+    return strtolower(utf8_decode($slug));
+}
+
+
+ function dataAtual(): string
+ {
     $diaMes = date('d');
     $diaSemana = date('w');
     $mes = date('n') - 1;
@@ -42,7 +61,7 @@
     $dataFormatada = $nomesDiasDaSemana[$diaSemana].', '.$diaMes.' de '.$nomesDosMeses[$mes].' de '.$ano;
     
     return $dataFormatada;    
-}
+ }
 
  function url(string $url): string
  {

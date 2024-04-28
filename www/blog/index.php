@@ -7,32 +7,11 @@ error_reporting(E_ALL);
 
 require_once 'sistema/configuracao.php';
 include_once 'sistema/helpers.php';
-/* 
-echo saudacao();
-echo '<br>';
-$texto = '<h1>Texto para resumir 123456789 123456789 123456789</h1>';
-echo resumirTexto($texto, 20);
-echo '<hr>';
-echo formatarValor(21231231);
-echo '<hr>';
-echo formatarNumero(1111111);
 
-echo '<hr>';
-$data = date('d/m/Y H:i:s');
-
-
-echo contarTempo('2024-04-26 16:38:05');
-*/
-
-/*
-$var = $_GET['var'];
-
-echo $var. '<br>';
-var_dump(validarUrl($var));
-*/
-//var_dump(localhost());
-echo url('/admin');
-echo '<hr>';
-echo dataAtual().'<br>'.saudacao(). ', usuário  '.$_SERVER['REMOTE_ADDR'].'<br>usando: '.
- $_SERVER['HTTP_USER_AGENT'];
-echo '<hr><a href="../" class="btn btn-primary btn-sm">Voltar</a>';
+echo slug("   Adão \"Negro\" - '2022'     ").'<hr>';
+echo slug("Avatar       2: O Caminho da Água").'<hr>';
+echo slug("Não! Não Olhe!").'<hr>';
+echo slug("Sonic 2 - O Filme").'<hr>';
+echo slug("NOVA SÉRIE NO DISNEY+!").'<hr>';
+echo slug("100 Melhores filmes").'<hr>';
+echo slug("teste!@###$%6¨%%¨,*.:/?\|,");
