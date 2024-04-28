@@ -171,7 +171,7 @@ function formatarNumero(string $numero = null): string
 function saudacao(): string
 {
     $hora = date('H');
-
+/*
     if ($hora >= 0 && $hora <= 5) {
         $saudacao = 'boa madrugada';
     } elseif ($hora >= 6 && $hora <= 12) {
@@ -181,6 +181,21 @@ function saudacao(): string
     } else {
         $saudacao = 'boa noite';
     }
+*/
+    switch ($hora){
+      case  ($hora >= 0 && $hora <= 5):
+        $saudacao = 'boa madrugada';
+        break;
+      case ($hora >= 6 && $hora <= 12):
+        $saudacao = 'bom dia';
+        break;
+      case ($hora >= 13 && $hora <= 18):
+        $saudacao = 'boa tarde';
+        break;
+      default: 
+        $saudacao = 'boa noite';
+    }
+
     return $saudacao;
 }
 
