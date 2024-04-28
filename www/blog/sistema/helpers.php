@@ -26,14 +26,22 @@
  * Docs 
  * https://docs.phpdoc.org/3.0/guide/references/phpdoc/index.html#phpdoc-reference
  */
+
+ 
+
 /**
  * Valida CPF 
  * ref# https://www.macoratti.net/alg_cpf.htm
  * @param string CPF 9 digitos
  * @return bool
  */
-function validaCPF(string $cpf): bool
+function validaCpf(string $cpf): bool
 {
+    $cpf = limparNumero($cpf);
+    
+    if (mb_strlen($cpf) != 11 or preg_match('/(\d)\1{10}/', $cpf)) {
+        return false;
+    }
     for ($t = 9; $t < 11; $t++) {
         for ($d = 0, $c = 0; $c < $t; $c++) {
             $d += $cpf[$c] * (($t + 1) - $c);
@@ -42,10 +50,13 @@ function validaCPF(string $cpf): bool
         if ($cpf[$c] != $d) {
             return false;
         }
-        else {
-            return true;
-        }
     }
+    return true;
+}
+
+function limparNumero(string $numero): string
+{
+    return preg_replace('/[^0-9]/', '', $numero);
 }
 
  /**

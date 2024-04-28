@@ -10,5 +10,5 @@ include_once 'sistema/helpers.php';
 
 echo saudacao();
 echo '<hr>';
-$cpf = '00434849138';
+$cpf = '004.348.491-38';
 echo 'O CPF '.$cpf. ' é ' . ( validaCPF($cpf) ? 'Válido' : 'inválido;');
