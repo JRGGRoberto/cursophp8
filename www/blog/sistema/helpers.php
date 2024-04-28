@@ -27,6 +27,23 @@
  * https://docs.phpdoc.org/3.0/guide/references/phpdoc/index.html#phpdoc-reference
  */
 
+ function dataAtual(): string
+{
+    $diaMes = date('d');
+    $diaSemana = date('w');
+    $mes = date('n') - 1;
+    $ano = date('Y');
+    
+    $nomesDiasDaSemana = ['domingo', 'segunda-feira','terça-feira','quarta-feira','quinta-feira','sexta-feira','sabádo'];
+    
+    $nomesDosMeses = ['janeiro', 'fevereiro','março','abril','maio','junho',
+'julho','agosto','setembro','outubro','novembro','dezembro'];
+    
+    $dataFormatada = $nomesDiasDaSemana[$diaSemana].', '.$diaMes.' de '.$nomesDosMeses[$mes].' de '.$ano;
+    
+    return $dataFormatada;    
+}
+
  function url(string $url): string
  {
     $servidor = filter_input(INPUT_SERVER, 'SERVER_NAME');

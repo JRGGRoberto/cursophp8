@@ -29,9 +29,10 @@ $var = $_GET['var'];
 
 echo $var. '<br>';
 var_dump(validarUrl($var));
-echo '<pre>';
-var_dump($_SERVER);
-echo '</pre>';*/
+*/
 //var_dump(localhost());
 echo url('/admin');
+echo '<hr>';
+echo dataAtual().'<br>'.saudacao(). ', usuário  '.$_SERVER['REMOTE_ADDR'].'<br>usando: '.
+ $_SERVER['HTTP_USER_AGENT'];
 echo '<hr><a href="../" class="btn btn-primary btn-sm">Voltar</a>';
