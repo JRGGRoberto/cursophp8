@@ -182,6 +182,8 @@ function saudacao(): string
         $saudacao = 'boa noite';
     }
 */
+
+/*
     switch ($hora){
       case  ($hora >= 0 && $hora <= 5):
         $saudacao = 'boa madrugada';
@@ -195,7 +197,13 @@ function saudacao(): string
       default: 
         $saudacao = 'boa noite';
     }
-
+*/
+    $saudacao = match(true){
+        $hora >= 0  && $hora <= 5  => 'boa madrugada',
+        $hora >= 6  && $hora <= 12 => 'bom dia',
+        $hora >= 13 && $hora <= 18 => 'boa tarde',
+        default =>   'boa noite'
+    };
     return $saudacao;
 }
 
