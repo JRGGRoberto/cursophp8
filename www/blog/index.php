@@ -20,10 +20,8 @@ require_once 'sistema/configuracao.php';
 include_once 'sistema/helpers.php';
 include './sistema/Entity/Mensagem.php';
 
-$msg = new Mensagem();
-echo $msg->sucesso('Mensagem de sucesso')->reinderizar();
-echo $msg->erro('Mensagem de sucesso')->reinderizar();
-echo $msg->alerta('Mensagem de sucesso')->reinderizar();
-echo $msg->informa('Mensagem de sucesso')->reinderizar();
-echo '<hr>';
-var_dump($msg);
+// usando o encadeamento
+echo (new Mensagem())->sucesso('Okay')->reinderizar();
+
+//usando métodos mágicos __toString()
+echo (new Mensagem())->alerta('Alerta!!!');
