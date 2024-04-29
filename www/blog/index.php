@@ -10,4 +10,6 @@ include_once 'sistema/helpers.php';
 include './sistema/Entity/Mensagem.php';
 
 $msg = new Mensagem();
+echo '<pre>';
 var_dump($msg);
+echo '</pre>';
