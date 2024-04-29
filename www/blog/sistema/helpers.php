@@ -26,6 +26,14 @@
  * https://docs.phpdoc.org/3.0/guide/references/phpdoc/index.html#phpdoc-reference
  */
 
+
+
+function validarEmail(string $email):bool
+{
+    return filter_var($email, FILTER_VALIDATE_EMAIL);
+}
+
+
 /**
  * Conta o tempo decorrido de uma data, passando uma data antiga
  * @param string $data
