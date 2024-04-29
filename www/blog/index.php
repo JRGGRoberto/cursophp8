@@ -7,8 +7,7 @@ error_reporting(E_ALL);
 
 require_once 'sistema/configuracao.php';
 include_once 'sistema/helpers.php';
+include './sistema/Entity/Mensagem.php';
 
-echo saudacao();
-echo '<hr>';
-$cpf = '004.348.491-38';
-echo 'O CPF '.$cpf. ' é ' . ( validaCPF($cpf) ? 'Válido' : 'inválido;');
+$msg = new Mensagem();
+var_dump($msg);

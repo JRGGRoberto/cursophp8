@@ -27,13 +27,10 @@
  * https://docs.phpdoc.org/3.0/guide/references/phpdoc/index.html#phpdoc-reference
  */
 
-<<<<<<< HEAD
-
-
-function validarEmail(string $email):bool
-=======
- 
-
+ function limparNumero(string $numero): string
+ {
+     return preg_replace('/[^0-9]/', '', $numero);
+ } 
 /**
  * Valida CPF 
  * ref# https://www.macoratti.net/alg_cpf.htm
@@ -57,11 +54,6 @@ function validaCpf(string $cpf): bool
         }
     }
     return true;
-}
-
-function limparNumero(string $numero): string
-{
-    return preg_replace('/[^0-9]/', '', $numero);
 }
 
  /**
@@ -154,7 +146,6 @@ function validarUrl(string $url): bool
  * @return bool  
  */
 function validarEmail(string $email): bool
->>>>>>> 25b569af38e13a5a9e21b1b334d37ce460e4e06c
 {
     return filter_var($email, FILTER_VALIDATE_EMAIL);
 }
