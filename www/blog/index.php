@@ -20,6 +20,8 @@ require_once 'sistema/configuracao.php';
 include_once 'sistema/helpers.php';
 include './sistema/Entity/Mensagem.php';
 
+use \sistema\Entety\Mensagem;
+
 // usando o encadeamento
 echo (new Mensagem())->sucesso('Okay')->reinderizar();
 

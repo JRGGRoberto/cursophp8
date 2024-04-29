@@ -1,9 +1,6 @@
 <?php
 
-/**
- * @author JRoberto Góes Gomes
- * 
- */
+namespace sistema\Entety;
 
  class Mensagem 
  {
