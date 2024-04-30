@@ -17,13 +17,20 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 require_once 'sistema/configuracao.php';
-include_once 'sistema/helpers.php';
+include_once 'sistema/Entity/Helpers.php';
 include './sistema/Entity/Mensagem.php';
 
-use \sistema\Entety\Mensagem;
+use \sistema\Entity\Mensagem;
+use \sistema\Entity\Helpers;
 
 // usando o encadeamento
 echo (new Mensagem())->sucesso('Okay')->reinderizar();
 
 //usando métodos mágicos __toString()
 echo (new Mensagem())->alerta('Alerta!!!');
+
+echo Helpers::saudacao();
+
+echo (new Mensagem())->sucesso(Helpers::saudacao());
+
+echo Helpers::validaCpf('09480611708');
