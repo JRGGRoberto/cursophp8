@@ -19,7 +19,6 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=7.3",
-        "bissolli/validador-cpf-cnpj": "dev-master"
+        "php": ">=7.3"
     }
 }
