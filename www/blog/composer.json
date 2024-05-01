@@ -19,6 +19,6 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=7.3"
+        "pecee/simple-router": "^5.0"
     }
 }

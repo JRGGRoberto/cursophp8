@@ -10,4 +10,5 @@ use sistema\Entity\Helpers;
 
 echo SITE_DESCRICAO;
 echo Helpers::saudacao() .', '. Helpers::dataAtual() ;
+echo SITE_NOME;
 
