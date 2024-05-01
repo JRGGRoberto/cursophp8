@@ -1,0 +1,22 @@
+{
+    "name": "jrggroberto/cursophp8",
+    "description": "Curso PHP 8",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "sistema\\": "sistema/"
+        },
+        "files": [
+            "sistema/configuracao.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Roberto",
+            "email": "jrggroberto@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
