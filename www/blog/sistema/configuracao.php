@@ -11,3 +11,4 @@ define('SITE_NOME', 'JRGG');
 define('SITE_DESCRICAO', 'JRGG Roberto Software');
 define('URL_PRODUCAO',  'https://jrggroberto.com.br');
 define('URL_DESENVOLVIMENTO', 'http://docker.localhost/blog');
+define('URL_SITE','blog/');
