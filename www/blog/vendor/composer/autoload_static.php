@@ -6,10 +6,18 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit672f3f213746b3fbc7d1b05c4b0c6168
 {
+    public static $files = array (
+        'e83b69e26ada6c2788359f1d97a5b1ea' => __DIR__ . '/../..' . '/sistema/configuracao.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         's' => 
         array (
             'sistema\\' => 8,
+        ),
+        'B' => 
+        array (
+            'Bissolli\\ValidadorCpfCnpj\\' => 26,
         ),
     );
 
@@ -17,6 +25,10 @@ class ComposerStaticInit672f3f213746b3fbc7d1b05c4b0c6168
         'sistema\\' => 
         array (
             0 => __DIR__ . '/../..' . '/sistema',
+        ),
+        'Bissolli\\ValidadorCpfCnpj\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/bissolli/validador-cpf-cnpj/src',
         ),
     );
 
