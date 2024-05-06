@@ -2,10 +2,14 @@
 
 namespace sistema\Entity;
 
+use sistema\Suporte\Template;
+
 class Controller
 {
-  public function __construct(string $nome = null)
+  protected Template $template;
+
+  public function __construct(string $diretorio)
   {
-     echo 'Foi inicializado '.$nome ;
+     $this->template = new Template($diretorio);
   }
 }

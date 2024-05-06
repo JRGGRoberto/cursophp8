@@ -2,34 +2,35 @@
     "packages": [
         {
             "name": "pecee/simple-router",
-            "version": "5.0.0.0",
-            "version_normalized": "5.0.0.0",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/skipperbent/simple-php-router.git",
-                "reference": "749f252ffba98955311235cc2befc8ab742a151c"
+                "reference": "b98d40b84b6e862bf250b179c0229efb7344a7bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/skipperbent/simple-php-router/zipball/749f252ffba98955311235cc2befc8ab742a151c",
-                "reference": "749f252ffba98955311235cc2befc8ab742a151c",
+                "url": "https://api.github.com/repos/skipperbent/simple-php-router/zipball/b98d40b84b6e862bf250b179c0229efb7344a7bb",
+                "reference": "b98d40b84b6e862bf250b179c0229efb7344a7bb",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "php": ">=7.1"
+                "php": ">=7.4"
             },
             "require-dev": {
                 "mockery/mockery": "^1",
-                "phpstan/phpstan": "^0",
-                "phpstan/phpstan-deprecation-rules": "^0",
-                "phpstan/phpstan-phpunit": "^0",
-                "phpstan/phpstan-strict-rules": "^0",
-                "phpunit/phpunit": "^7"
+                "phpstan/phpstan": "^1",
+                "phpstan/phpstan-deprecation-rules": "^1",
+                "phpstan/phpstan-phpunit": "^1",
+                "phpstan/phpstan-strict-rules": "^1",
+                "phpunit/phpunit": "^8"
             },
-            "time": "2021-07-17T23:45:46+00:00",
+            "time": "2023-12-11T21:52:06+00:00",
+            "default-branch": true,
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Pecee\\": "src/Pecee/"
@@ -68,34 +69,35 @@
         },
         {
             "name": "symfony/deprecation-contracts",
-            "version": "2.5.x-dev",
-            "version_normalized": "2.5.9999999.9999999-dev",
+            "version": "dev-main",
+            "version_normalized": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "80d075412b557d41002320b96a096ca65aa2c98d"
+                "reference": "0e0d29ce1f20deffb4ab1b016a7257c4f1e789a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/80d075412b557d41002320b96a096ca65aa2c98d",
-                "reference": "80d075412b557d41002320b96a096ca65aa2c98d",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/0e0d29ce1f20deffb4ab1b016a7257c4f1e789a1",
+                "reference": "0e0d29ce1f20deffb4ab1b016a7257c4f1e789a1",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1"
+                "php": ">=8.1"
             },
-            "time": "2023-01-24T14:02:46+00:00",
+            "time": "2024-04-18T09:32:20+00:00",
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "2.5-dev"
+                    "dev-main": "3.5-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
                     "url": "https://github.com/symfony/contracts"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "files": [
                     "function.php"
@@ -118,7 +120,7 @@
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/deprecation-contracts/tree/2.5"
+                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.5.0"
             },
             "funding": [
                 {
@@ -394,12 +396,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "0d1a937f61aa36aab95d5315d187501bb6da1ae0"
+                "reference": "00c43a9c3890dc3c74cac7f92600bd91ef8c35e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/0d1a937f61aa36aab95d5315d187501bb6da1ae0",
-                "reference": "0d1a937f61aa36aab95d5315d187501bb6da1ae0",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/00c43a9c3890dc3c74cac7f92600bd91ef8c35e1",
+                "reference": "00c43a9c3890dc3c74cac7f92600bd91ef8c35e1",
                 "shasum": ""
             },
             "require": {
@@ -413,10 +415,10 @@
                 "psr/container": "^1.0|^2.0",
                 "symfony/phpunit-bridge": "^5.4.9|^6.4|^7.0"
             },
-            "time": "2024-05-01T16:23:14+00:00",
+            "time": "2024-05-04T17:05:47+00:00",
             "default-branch": true,
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "files": [
                     "src/Resources/core.php",
