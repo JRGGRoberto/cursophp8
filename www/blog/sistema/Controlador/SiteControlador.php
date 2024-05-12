@@ -27,7 +27,7 @@ class SiteControlador extends Controller
   {
     $view = 'index.html';
     $dados = [
-      'titulo' => 'Título Teste - Sobre',
+      'titulo' => 'Título Teste - Fale',
       'subtitulo' => 'Subtitulo Teste',
       'menu' => '<a href="./">index</a> [fale] <a href="./sobre">sobre</a>'
     ];
