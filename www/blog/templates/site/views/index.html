@@ -6,10 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>{{ resumirTexto(titulo, 5) }}</h1>
-    {{menu}}
-    <p>{{ subtitulo }}</p>
-    <p>{{ url() }}</p>
-    <p>{{ saudacao() }}</p>
+    { % include 'topo.html' %}
+    <hr>
+    { % include 'rodape.html' % }
 </body>
 </html>
