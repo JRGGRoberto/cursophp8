@@ -3,7 +3,7 @@
 namespace sistema\Suporte;
 use Twig\Lexer;
 use Twig\TwigFunction;
-
+use sistema\Entity\Helpers;
 
 class Template
 {
@@ -30,7 +30,19 @@ class Template
             $this->twin->addFunction(
                 new \Twig\TwigFunction('url', function
                 (string $url = null){
-                    return 'aqui url';
+                    return Helpers::url($url);
+                })
+            ),
+            $this->twin->addFunction(
+                new \Twig\TwigFunction('saudacao', function
+                () {
+                    return Helpers::saudacao();
+                })
+            ),
+            $this->twin->addFunction(
+                new \Twig\TwigFunction('resumirTexto', function
+                (string $texto, int $limite) {
+                    return Helpers::resumirTexto($texto, $limite);
                 })
             )
         );
