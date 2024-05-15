@@ -46,7 +46,7 @@ ed0109d778cf   mysql:5.7      "docker-entrypoint.s…"   6 hours ago   Up 40 min
 ```
 
 ## Para testar no Browser
-```http://docker.localhost/```
+[http://docker.localhost/](http://docker.localhost/)
 
 ![Index.php da página](./docs/assets/images/index.jpg)
 
@@ -60,6 +60,7 @@ ed0109d778cf   mysql:5.7      "docker-entrypoint.s…"   6 hours ago   Up 40 min
 > Sem essa etapa o php não irá conseguir acessar o DB
 
 ```docker exec -it php-fpm docker-php-ext-install pdo pdo_mysql```
+
 ```docker-compose restart```
 
 Depois disto já pode testar a conexão pelo browser:
