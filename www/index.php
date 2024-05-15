@@ -17,18 +17,23 @@
   
 <div class="container mt-5">
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <h3>Desenv PHP8</h3>
       <p>Curso de PHP 8 do Zero ao Profissional</p>
       <p>O fonte resultante do desenvolvimento do curso encontra-se em <a href="https://github.com/JRGGRoberto/cursophp8" target="_blank">github</a></p>
       <p><a href="./blog" class="btn btn-primary btn-sm">Acessar</a></p>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <h3>BD</h3>
       <p>Teste de conexão com o MySQL</p>
       <p><a href="db.php" class="btn btn-primary btn-sm">Acessar</a></p>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-3">
+      <h3>Teste</h3>
+      <p>Teste</p>
+      <p><a href="./teste" class="btn btn-primary btn-sm">Acessar</a></p>
+    </div>
+    <div class="col-sm-3">
       <h3>Mostrar todos os erros PHP</h3>        
       <p><pre>
 ini_set('display_errors', 1);
